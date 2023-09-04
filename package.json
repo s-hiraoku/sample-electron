@@ -1,0 +1,21 @@
+{
+  "name": "sample-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-macOS": "electron-packager ./src FirstApp --platform=darwin --arch=x64 --overwrite --out=build/Release",
+    "build-windows": "electron-packager ./src FirstApp --platform=win32 --arch=x64 --overwrite --out=build/Release"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.1.0",
+    "electron-packager": "^17.1.2"
+  },
+  "volta": {
+    "node": "20.6.0"
+  }
+}
